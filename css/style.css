@@ -1,0 +1,377 @@
+body {
+  background: linear-gradient(-45deg, #ee7752, #cc2b5e, #123f64, #23D5AB);
+  background-size: 500% 500%;
+  -webkit-animation: Gradient 15s ease infinite;
+  -moz-animation: Gradient 15s ease infinite;
+  animation: Gradient 15s ease infinite;
+}
+
+@keyframes Gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+
+
+
+.two-buttons {
+  width: 30vw;
+  height: 80px;
+  background-color: #517ca3;
+  border-radius: 10px;
+  font-size: 24px;
+  font-weight: 200;
+  padding: 5px;
+  color: white;
+}
+
+
+
+@media (min-width: 768px) {
+  #div-video-big {
+    margin-left: 22.5%;
+    height: 55vh;
+    width: 100%;
+    max-width: 800px;
+    position: absolute;
+    z-index: 2;
+    -webkit-border-radius: 30px !important;
+    border-radius: 30px !important;
+    overflow: hidden;
+  }
+}
+
+@media (max-width: 767px) {
+  #div-video-big {
+    height: 55vh;
+    width: 100%;
+    position: absolute;
+    overflow: hidden;
+  }
+}
+
+
+
+#div-video-small {
+  height: 20vh;
+  width: 30%;
+  margin-right: 10px;
+  position: relative;
+  z-index: 3;
+  -webkit-border-radius: 30px !important;
+  border-radius: 30px !important;
+  float: right;
+  overflow: hidden;
+}
+
+
+
+@media (max-width: 767px) {
+  #div-messenger {
+    height: 44vh;
+    width: 100%;
+    max-width: 800px;
+    position: absolute;
+    bottom: 0;
+    z-index: 1;
+    border-top-right-radius: 30px !important;
+    border-top-left-radius: 30px !important;
+    overflow: auto;
+    -webkit-overflow-scrolling: touch;
+    padding-bottom: 40px;
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+}
+@media (min-width: 768px) {
+  #div-messenger {
+    margin-left: 22.5%;
+    height: 44vh;
+    width: 100%;
+    max-width: 800px;
+    position: absolute;
+    bottom: 0;
+    z-index: 1;
+    -webkit-border-radius: 30px !important;
+    border-radius: 30px !important;
+    overflow: auto;
+    -webkit-overflow-scrolling: touch;
+    padding-bottom: 40px;
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+}
+.messenger-bottom {
+  background-color: transparent;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  z-index: 2;
+  max-width: 800px;
+  border-bottom-right-radius: 30px;
+  border-bottom-left-radius: 30px;
+}
+
+@media (min-width: 768px){
+  .messenger-bottom{
+  margin-left: 22.5%;
+}
+}
+
+#label-attach {
+  margin-bottom: 15px;
+  margin-left: 30px;
+}
+
+.message-box {
+  border: 1px solid #ccc;
+  width: 80%;
+  position: absolute;
+  right: 0;
+  bottom: 10px;
+  margin-right: 5%;
+  border-radius: 25px;
+  z-index: 1;
+  background-color: white;
+}
+
+.message-box textarea:focus:-webkit-placeholder {
+  color: transparent;
+}
+
+
+
+.message-input {
+  resize: none !important;
+  outline: none !important;
+  box-shadow: none !important;
+  -webkit-box-shadow: none !important;
+  font-size: 18px;
+  padding: 5px;
+  margin-left: 15%;
+  border: none;
+  width: 80%;
+  height: 30px;
+}
+
+
+.message-submit {
+  color: #4A90E2;
+  border: none;
+  background: transparent;
+  --background: transparent;
+  --box-shadow: none;
+  --background-hover: transparent;
+  font-size: 12px;
+  text-transform: uppercase;
+  border-radius: 5px;
+  outline: none !important;
+  cursor: pointer;
+  position: absolute;
+  right: 7vw;
+  bottom: 10px;
+  height: 36px;
+  z-index: 2;
+}
+
+.my-message {
+  background: linear-gradient(-45deg, #24679e, rgb(45, 189, 182) 100%);
+  color: #fff;
+  z-index: 0;
+  padding: 1em;
+  margin:13px 17px;
+  width:60%;
+  font-size:14px;
+  border-radius: 25px;
+  display:grid;
+  float:right;
+  white-space: pre-wrap;
+}
+ 
+.other-message {
+  background: linear-gradient(-45deg, #e7648d, #aa407c 100%);
+  color: #fff;
+  z-index: 0;
+  padding: 1em;
+  margin:13px 17px;
+  width:60%;
+  font-size:14px;
+  border-radius: 25px;
+  display:grid;
+  float:left;
+  white-space: pre-wrap;
+}
+ 
+.time {
+  color: #dfdfdf;
+  font-size: small;
+  text-align: right;
+}
+ 
+ 
+.msg-btn {
+  --padding-start: 0.5em;
+  --padding-end: 0.5em;
+}
+
+
+#icon-upload {
+  background-color: transparent;
+  border: 1px solid #4A90E2;
+  border-radius: 50%;
+  color:#4A90E2;
+  font-size: 22px;
+  position: relative;
+  transform: rotate(180deg);
+  padding-left: 5px;
+  padding-right: 5px;  
+}
+
+
+
+
+
+@media (min-width: 768px) {
+  #row-video-call {
+    margin-left: 22.5%;
+  }
+}
+
+@media (max-width: 767px) {
+  #video-call-bottom {
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    z-index: 3;
+  }
+}
+
+@media (min-width: 768px) {
+  #video-call-bottom {
+    width: 100%;
+    max-width: 800px;
+    position: absolute;
+    bottom: 0;
+    z-index: 2;
+  }
+}
+
+#video-call-bottom {
+  padding-bottom: 10px;
+}
+
+#div-call-button {
+  text-align: center;
+  height: 20vh;
+  width: 70%;
+  position: absolute;
+  z-index: 3;
+  float: left;
+}
+
+
+
+.message {
+  padding: 10px;
+  border-radius: 25px;
+  margin-bottom: 4px;
+  white-space: pre-wrap;
+}
+ 
+.my-message {
+  background: linear-gradient(-45deg, #24679e, rgb(45, 189, 182) 100%);
+  color: #fff;
+  z-index: 0;
+}
+ 
+.other-message {
+  background: linear-gradient(-45deg, #e7648d, #aa407c 100%);
+  color: #fff;
+  z-index: 0;
+}
+ 
+.time {
+  color: #dfdfdf;
+  float: right;
+  font-size: small;
+  display: block;
+  width: 100%;
+}
+
+#attachmentPreview {
+  margin-left: 20px;
+  margin-top: 10px;
+  border-radius: 10px;
+  width: 75px; 
+  height: 100px; 
+  display: none;
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+
+#icon-close {
+  margin-left: 50px;
+  position: fixed;
+  width: 20px;
+  margin-top: 5px;
+}
+
+.attachment-container {
+  border-radius: 10px;
+  width: 75px; 
+  height: 100px;
+  background-image: none;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  margin-left: 75%;
+  margin-bottom: 5px;
+  display: none;
+}
+
+@media (max-width: 420px) {
+  .attachment-container {
+    margin-left: 55%;
+  }
+}
+
+
+*::-webkit-media-controls-panel {
+  display: none!important;
+  -webkit-appearance: none !important;
+}
+
+/* Old shadow dom for play button */
+
+*::-webkit-media-controls-play-button {
+  display: none!important;
+  -webkit-appearance: none !important;
+}
+
+/* New shadow dom for play button */
+
+/* This one works! */
+
+*::-webkit-media-controls-start-playback-button {
+  display: none!important;
+  -webkit-appearance: none !important;
+}
+
+video::-webkit-media-controls {
+  display: none !important;
+}
+video::-webkit-media-controls-start-playback-button {
+  display: none !important;
+}
+
+#localVideo {
+  object-fit: fill;
+}
+
+#remoteVideo {
+  object-fit: fill;
+}
